@@ -15,6 +15,11 @@ public class DemoApplication {
         return "Hello World!";
     }
 
+    @RequestMapping("/test")
+    String test() {
+        return "Testing. This is an end point v2!";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
